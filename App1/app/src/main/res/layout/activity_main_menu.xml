@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.gabrielunesi.app1.MainMenu">
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/hard"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/StartGameButton"
+        app:layout_constraintVertical_bias="0.006"
+        android:layout_marginLeft="259dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/StartGameButton"
+        android:layout_width="114dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ScoreButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/ScoreButton"
+        android:layout_width="111dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/score"
+        android:background="@android:color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/HelpButton"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/HelpButton"
+        android:layout_width="113dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="132dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/help"
+        android:background="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:text="@string/medium"
+        android:background="@android:color/white"
+
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/StartGameButton"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/easyy"
+        android:background="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        app:layout_constraintTop_toBottomOf="@+id/StartGameButton" />
+
+    <TextView
+        android:id="@+id/completeDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347" />
+</android.support.constraint.ConstraintLayout>
